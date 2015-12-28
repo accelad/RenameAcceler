@@ -53,6 +53,7 @@ int main()
     backup_all(path_pairs, backup_path);
     rename_all(path_pairs);
   }
+  return 0;
 }
 
 static std::size_t rename_all(
@@ -92,7 +93,7 @@ static void set_directory(
 }
 
 static void set_src_tar_path_pairs(
-    std::vector<SrcTarPathPair> & path_pairs,
+    std::vector<SrcTarPathPair> &path_pairs,
     const SrcTarExtPair &ext_pair,
     const std::experimental::filesystem::path &directory)
 {
